@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="icon" href="./images/favicon-32x32.png">
+    <script src="https://kit.fontawesome.com/e2044e8911.js" crossorigin="anonymous"></script>
+    <title>Fylo landing page with two column layout</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-light navbar-expand">
+        <div class="container-fluid">
+          <a class="navbar-brand ms-xl-5 me-0" href="#"> <img class="w-75" src="./images/logo.svg" alt=""> </a>
+          <ul class="navbar-nav">
+            <li class="nav-item mx-xl-3 ">
+              <a class="nav-link active" href="#"> Features</a>
+            </li>
+            <li class="nav-item mx-xl-3 ">
+              <a class="nav-link active" href="#">Team</a>
+            </li>
+            <li class="nav-item mx-xl-3 me-xl-5 ">
+              <a class="nav-link active" href="#">Sign In</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mt-5 ">
+      <div class="container-fluid ms-xl-5 mb-xl-5 pb-xl-5 px-4 ">
+        <div class="row">
+          <div class="col-xl-6 order-xl-1 ">
+            <img class=" ps-5 img-il"  src="./images/illustration-1.svg" alt="">
+          </div>
+          <div class="col-xl-6  pt-xl-4 txt-tl" >
+          <h1 class="pt-5">All your files in one secure location, accessible anywhere.</h1>
+          <p class="py-3">Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family, and
+            co-workers.</p>
+            <div class="container ps-0">
+              <div class="row">
+                <div class="col-xl-8">
+                  <form class="" action="#" name="form1" id="myForm" >
+                    <input class="w-100 mailinput" type="text" name='text1' value="" id="mailInput" placeholder="Enter your email...">
+                    <p id="errorMsg"></p>
+                  </form>
+                </div>
+                <div class="col-xl-4">
+                  <button type="submit" id="button1" name="submit" value="Submit" onclick="ValidateEmail1(document.form1.text1)" class=" w-100 shadow-lg ">Get Started</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid my-5 pt-5 ms-xl-5 px-4 ">
+        <div class="row">
+          <div class="col-xl-6 order-xl-1">
+            <img src="images/illustration-2.svg" alt="" class="ps-5 img-il" >
+          </div>
+          <div class="col-xl-6 txt-tl ">
+            <h1 >Stay productive, wherever you are</h1>
+            <p>Never let location be an isse when accessing your files.Fylo has
+              you covered for all of your file storage needs.</p>
+            <p>Securely share files and folders with friends, family and colleagues
+            for live collaboration. No email attachments required!</p>
+            <a style="color:hsl(170, 45%, 43%);" href="#">See how Fylo works</a><span><img src="./images/icon-arrow.svg" alt=""></span>
+            <div class="card my-5 w-75">
+              <div class="card-body">
+                <img src="images/icon-quotes.svg" alt="" class="card-title ">
+                <p class="card-text px-xl-5">Fylo Has improved our team productivity by
+                an order of magnitude. Since making the switch our team has
+                become a well-oiled collaboration machine.</p>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-2 pe-xl-0 ps-xl-4">
+                      <img src="images/avatar-testimonial.jpg" alt="" class=" rounded-circle pe-xl-0 ms-xl-3" id="avtr">
+                    </div>
+                    <div class="col-10 ps-xl-2">
+                      <h6 class="mb-0">Kyle Burton</h6>
+                      <p>Founder & CEO, Huddle</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="container-fluid" style="background-color:#8080ff;color:white;">
+        <div class="row">
+          <div class="col-xl-6 py-xl-5 py-3" id="bot-tl">
+            <h2>Get early access today</h2>
+            <p>It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team would
+            be happy to help you.</p>
+          </div>
+          <div class="col-xl-6 py-xl-5 px-xl-3 py-3 " id="formpart">
+            <form class="" action="#" name="form2" id="myForm2">
+              <input type="text" name="text2" id="mailInput2" value="" placeholder="example@email.com" class="w-75 mailinput">
+              <p id="errorMsg2"></p>
+            </form>
+            <button type="submit" name="submit" value="Submit" onclick="ValidateEmail2(document.form2.text2)" class="shadow-lg w-25" id="button2">Get Started</button>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer>
+      <img src="images/logo.svg" alt=""  id="logo">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3">
+            <ul>
+              <li class="my-3">
+                <span><img src="images/icon-phone.svg" alt=""></span>
+                <p class="d-inline ms-3">Phone: +1-543-123-4567</p>
+              </li>
+              <li class="my-3">
+                <span><img src="images/icon-email.svg" alt=""></span>
+                <p class="d-inline ms-3">example@fylo.com</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-3">
+            <ul>
+              <li class="my-3"><a href="#">About Us</a></li>
+              <li class="my-3"><a href="#">Jobs</a></li>
+              <li class="my-3"><a href="#">Press</a></li>
+              <li class="my-3"><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3">
+            <ul>
+              <li class="my-3"><a href="#">Contact Us</a></li>
+              <li class="my-3"><a href="#">Terms</a></li>
+              <li class="my-3"><a href="#">Privacy</a></li>
+            </ul>
+          </div>
+          <div class="col-xl-3" id="icon-footer">
+            <i class="fab fa-facebook-f mx-3 rounded-circle border p-2 mt-3 mb-5"></i>
+            <i class="fab fa-twitter mx-3 rounded-circle border p-2 mt-3 mb-5" ></i>
+            <i class="fab fa-instagram mx-3 rounded-circle border p-2 mt-3 mb-5"></i>
+          </div>
+
+        </div>
+
+      </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+  </body>
+</html>
